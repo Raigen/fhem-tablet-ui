@@ -6,4 +6,4 @@ services:
     volumes:
       - ./index.html:/usr/share/nginx/html/tablet/index.html
     ports:
-      - "8080:80"
+      - "80:80"
