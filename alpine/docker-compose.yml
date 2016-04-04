@@ -2,8 +2,8 @@ version: '2'
 services:
   fhem-tablet-ui:
     container_name: tablet-ui
-    image: raigen/rpi-fhem-tablet-ui
+    image: raigen/fhem-tablet-ui:alpine
     volumes:
-      - ./index.html:/usr/share/nginx/html/tablet/index.html
+      - ../index.html:/etc/nginx/html/tablet/index.html
     ports:
       - "8080:80"
