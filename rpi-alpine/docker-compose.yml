@@ -4,6 +4,6 @@ services:
     container_name: tablet-ui
     image: raigen/fhem-tablet-ui:rpi-alpine
     volumes:
-      - ./index.html:/usr/share/nginx/html/tablet/index.html
+      - ../index.html:/usr/share/nginx/html/tablet/index.html
     ports:
       - "80:80"
