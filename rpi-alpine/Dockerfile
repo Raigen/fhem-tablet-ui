@@ -1,8 +1,6 @@
-FROM clarkc/rpi-nginx
+FROM raigen/rpi-alpine-nginx
 
 MAINTAINER Raigen
-
-RUN mkdir -p /var/www
 
 ADD https://github.com/knowthelist/fhem-tablet-ui/tarball/master /tmp/tablet-ui.tar
 RUN cd /tmp && tar xvzf /tmp/tablet-ui.tar && \
